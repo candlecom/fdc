@@ -1,0 +1,35 @@
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba($mainBlue, .2);
+  width: 100%;
+
+  &__btn--container {
+    float: right;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($mainBlue, .52);
+    padding: 1.5rem;
+
+    @mixin atSmall {
+      position: absolute;
+      top: 0;
+      left: auto;
+      transform: translateX(0%);
+      background-color: rgba($mainBlue, .52);
+      padding: 3.5rem;
+    }
+
+    &__menu-content {
+      display: none;
+    }
+
+  }
+
+}
