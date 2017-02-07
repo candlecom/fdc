@@ -1,14 +1,21 @@
 .headlineH1 {
   font-weight: 300;
-  font-size: 2.875;
+  font-size: 2.875rem;
   color: #FFFFFF;
-
-  &--centered {
-    text-align: center;
-  }
+  width: 300px;
+  text-align: center;
 
   &--orange {
     color: $mainOrange;
+  }
+
+  @mixin atMedium {
+    font-weight: 300;
+    font-size: 2.875;
+    color: #FFFFFF;
+    width: 800px;
+    text-align: center;
+    padding-left: 5.5em;
   }
 }
 
@@ -16,10 +23,17 @@
   font-weight: 300;
   font-size: 2.875;
   color: #FFFFFF;
-  width: 400px;
+  width: 300px;
 
   &--centered {
     margin: 0 auto;
+  }
+
+  @mixin atMedium {
+    font-weight: 300;
+    font-size: 2.875;
+    color: #FFFFFF;
+
   }
 
 }

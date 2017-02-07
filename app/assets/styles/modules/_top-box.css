@@ -1,24 +1,22 @@
 /* Equals Large-here */
 
 .top-box {
+  border-bottom: 10px solid $mainBlue;
+/*  position: relative;*/
 
-
-/*  border-bottom: 10px solid $mainBlue;
-  position: relative;
-*/
-  &__image {
+  /*&__image {
     display: block;
     padding: 0;
-  }
+  }*/
 
   &__text-content {
-    position: absolute;
-    top: 20%;
-    transform: translateY(10%);
+    /*position: absolute;*/
+    top: 0%;
+    transform: translateY(0%);
     left: 0;
     width: 100%;
     text-align: center;
-
+    @mixin clearfix;
   }
 
   &__title {
@@ -58,7 +56,7 @@
   }
 
   &__description {
-    max-width: 100px;
+    max-width: 300px;
     font-weight: 200;
     color: #FFF;
     font-size: .8rem;
@@ -66,9 +64,6 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1rem;
-  }
 
-  &__clear-me {
-    clear: both;
   }
 }

@@ -480,24 +480,31 @@ a {
 
 /* Equals Large-here */
 
-/*  border-bottom: 10px solid $mainBlue;
-  position: relative;
-*/
-
-.top-box__image {
-  display: block;
-  padding: 0;
+.top-box {
+  border-bottom: 10px solid #2f5572;
 }
 
-.top-box__text-content {
-  position: absolute;
-  top: 20%;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+/*&__image {
+    display: block;
+    padding: 0;
+  }*/
+
+.top-box__text-content {/*position: absolute;*/
+  top: 0%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   left: 0;
   width: 100%;
   text-align: center;
 }
+
+.top-box__text-content::after {
+  content: ;
+  clear: both;
+  display: table;
+}
+
+/*  position: relative;*/
 
 .top-box__title {
   font-weight: 300;
@@ -550,7 +557,7 @@ a {
 }
 
 .top-box__description {
-  max-width: 100px;
+  max-width: 300px;
   font-weight: 200;
   color: #FFF;
   font-size: .8rem;
@@ -558,10 +565,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   line-height: 1rem;
-}
-
-.top-box__clear-me {
-  clear: both;
 }
 
 .btn {
@@ -608,11 +611,9 @@ a {
 
 .headlineH1 {
   font-weight: 300;
-  font-size: 2.875;
+  font-size: 2.875rem;
   color: #FFFFFF;
-}
-
-.headlineH1--centered {
+  width: 300px;
   text-align: center;
 }
 
@@ -620,16 +621,37 @@ a {
   color: #d59541;
 }
 
+@media (min-width: 800px) {
+
+  .headlineH1 {
+    font-weight: 300;
+    font-size: 2.875;
+    color: #FFFFFF;
+    width: 800px;
+    text-align: center;
+    padding-left: 5.5em;
+  }
+}
+
 .headlineH3 {
   font-weight: 300;
   font-size: 2.875;
   color: #FFFFFF;
-  width: 400px;
+  width: 300px;
 
 }
 
 .headlineH3--centered {
   margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+
+  .headlineH3 {
+    font-weight: 300;
+    font-size: 2.875;
+    color: #FFFFFF;
+  }
 }
 
 /*  @mixin clearfix;*/
@@ -686,7 +708,7 @@ a {
 .site-header__logo {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 30%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: rgba(47,85,114, .52);
@@ -706,8 +728,20 @@ a {
   }
 }
 
-.site-header__logo__menu-content {
-  display: none;
+.site-header__menu-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (min-width: 800px) {
+
+  .site-header__menu-icon {
+    display: none;
+  }
 }
 
 .primary-nav {
@@ -731,7 +765,7 @@ a {
 }
 
 .primary-nav ul::after {
-  content: "";
+  content: ;
   clear: both;
   display: table;
 }
