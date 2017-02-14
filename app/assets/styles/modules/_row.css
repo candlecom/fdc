@@ -1,6 +1,12 @@
 .row {
 
-@mixin clearfix;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+
 
   &--gutters {
     margin-right: -65px;
@@ -28,4 +34,7 @@
       width: 50%;
     }
   }
+
+
+
 }

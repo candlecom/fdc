@@ -483,6 +483,7 @@ a {
 .top-box {
  border-bottom: 10px solid #2f5572;
  position: relative;
+ width: 100%;
  /*padding-top: 0px;*/
  background-color: #babdc1;
 
@@ -609,10 +610,10 @@ a {
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1236px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 .page-section {
@@ -675,7 +676,7 @@ a {
 }
 
 .row::after {
-  content: ;
+  content: "";
   clear: both;
   display: table;
 }
