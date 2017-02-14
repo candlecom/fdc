@@ -1,39 +1,45 @@
 .headlineH1 {
   font-weight: 300;
-  font-size: 2.875rem;
-  color: #FFFFFF;
-  width: 300px;
-  text-align: center;
+  font-size: .875;
+  color: #000000;
+  width: 250px;
+
+  &--centered {
+    text-align: center;
+  }
+
+
+  @mixin atMedium {
+    font-weight: 300;
+    font-size: 2.875rem;
+    color: #000000;
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
 
   &--orange {
     color: $mainOrange;
   }
-
-  @mixin atMedium {
-    font-weight: 300;
-    font-size: 2.875;
-    color: #FFFFFF;
-    width: 800px;
-    text-align: center;
-    padding-left: 5.5em;
-  }
 }
 
 .headlineH3 {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 2.875;
-  color: #FFFFFF;
-  width: 300px;
+  color: #000000;
+  width: 200px;
+
+  @mixin atMedium {
+    font-weight: 200;
+    font-size: 2.875;
+    color: #000000;
+    width: 400px;
+    padding: 10px 0;
+  }
 
   &--centered {
     margin: 0 auto;
-  }
-
-  @mixin atMedium {
-    font-weight: 300;
-    font-size: 2.875;
-    color: #FFFFFF;
-
   }
 
 }
