@@ -890,7 +890,7 @@ a {
 }
 
 .primary-nav ul::after {
-  content: ;
+  content: "";
   clear: both;
   display: table;
 }
