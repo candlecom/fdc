@@ -481,14 +481,7 @@ a {
 /* Equals Large-here */
 
 .top-box {
-<<<<<<< HEAD
-  background-color: #95e8e4;
-}
 
-/*  border-bottom: 10px solid $mainBlue;
-  position: relative;
-*/
-=======
  border-bottom: 10px solid #2f5572;
  position: relative;
  width: 100%;
@@ -503,7 +496,6 @@ a {
     padding: 50px 0 50px 0;
   }
 }
->>>>>>> header
 
 .top-box__image {
   display: block;
@@ -637,6 +629,7 @@ a {
   font-size: .875;
   color: #000000;
   width: 250px;
+  margin: 0 auto;
 }
 
 .headlineH1--centered {
@@ -651,7 +644,7 @@ a {
     color: #000000;
     width: 650px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 0px;
   }
 }
 
@@ -724,7 +717,6 @@ a {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 .site-footer {
   background-color: #2f5572;
   color: #ffffff;
@@ -736,7 +728,17 @@ a {
   display: block;
   margin-bottom: 1rem;
   font-weight: 200;
-=======
+}
+
+@media (min-width: 800px) {
+
+  .site-footer__text {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 1.4rem;
+  }
+}
+
 .site-header {
   padding: 10px 0;
   position: absolute;
@@ -949,21 +951,13 @@ a {
   padding: 5px 8px;
   font-size: .8rem;
   background-color: rgba(47,85,114, .5);
->>>>>>> header
 }
 
 @media (min-width: 800px) {
 
-<<<<<<< HEAD
-  .site-footer__text {
-    display: inline;
-    margin-bottom: 0;
-    margin-right: 1.4rem;
-=======
   .primary-nav a {
     font-size: 1rem;
     padding: 12px 0;
     background-color: transparent;
->>>>>>> header
   }
 }
