@@ -9,6 +9,9 @@
     text-align: center;
   }
 
+  &--strong {
+    font-weight: bold;
+   }
 
   @mixin atMedium {
     font-weight: 300;

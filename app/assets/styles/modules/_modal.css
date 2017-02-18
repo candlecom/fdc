@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  background-color: rgba(255, 255, 255, .94);
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+
+  &__splash {
+      color: #585b60;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+
+  &__splash2 {
+      color: #585b60;
+      font-size: 1rem;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      text-align: center;
+  }
+
+  &__emailus {
+      color: #1851ad;
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 55%;
+  }
+}
