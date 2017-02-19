@@ -629,6 +629,7 @@ a {
   font-size: .875;
   color: #000000;
   width: 250px;
+  margin: 0 auto;
 }
 
 .headlineH1--centered {
@@ -643,7 +644,7 @@ a {
     color: #000000;
     width: 650px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 0px;
   }
 }
 
@@ -747,6 +748,18 @@ a {
   width: 100%;
 }
 
+@media (min-width: 800px) {
+
+  .site-header {
+    position: fixed;
+    background-color: rgba(186,189,193, .50);
+  }
+
+  .site-header--dark {
+    background-color: rgba(23, 51, 72, .85);
+  }
+}
+
 .site-header--is-expanded {
   background-color: rgba(47,85,114, .55);
 }
@@ -764,19 +777,32 @@ a {
 }
 
 .site-header__logo {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(.8);
+          transform: translateX(-50%) scale(.8);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  background-color: #2f5572;
+  padding: 45px 56px;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 800px) {
 
   .site-header__logo {
-    position: absolute;
-    top: 0;
     left: auto;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    background-color: rgba(47,85,114, .52);
-    padding: 3.5rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(.57);
+            transform: scale(.57);
   }
 }
 
@@ -959,4 +985,22 @@ a {
     padding: 12px 0;
     background-color: transparent;
   }
+
+  .primary-nav a.is-current-link {
+    color: #fabb69;
+  }
+}
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
