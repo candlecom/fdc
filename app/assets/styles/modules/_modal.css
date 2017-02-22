@@ -7,6 +7,23 @@
   left: 0;
   right: 0;
   text-align: center;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+
+  }
+
+  &__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 
   &__splash {
@@ -27,7 +44,7 @@
   }
 
   &__emailus {
-      color: #1851ad;
+      color: &mainOrange;
       display: block;
       font-size: 1rem;
       font-weight: 600;
@@ -35,5 +52,20 @@
       margin-right: auto;
       text-align: center;
       width: 55%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $mainBlue;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainOrange;
+    }
   }
 }
