@@ -493,14 +493,14 @@ a {
 @media (min-width: 800px) {
 
   .top-box {
-    padding: 50px 0 50px 0;
+    padding: 20px 0 50px 0;
   }
 }
 
 .top-box__image {
   display: block;
   padding: 0 10px 0 10px;
-  opacity: 0.2;
+  opacity: 0.4;
   filter: alpha(opacity=50);/* For IE8 and earlier */
 }
 
@@ -518,7 +518,8 @@ a {
 
   .top-box__text-content {
     padding: 100px  10px 100px 10px;
-    position: absolute;/*  top: 30%;*//*  transform: translateY(-50%);*/
+    position: absolute;
+    top: 30%;/*  transform: translateY(-50%);*/
     left: 0;
     width: 100%;
     text-align: center;
@@ -617,6 +618,10 @@ a {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+.wrapper__background {
+  background-color: rgba(186,189,193, .5)
 }
 
 /* padding: 4.5rem 0; */
