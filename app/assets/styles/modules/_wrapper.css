@@ -5,4 +5,8 @@
   margin-left: auto;
   margin-right: auto;
 
+  &__background {
+    background-color: rgba($mainGrey, .5)
+  }
+
 }

@@ -9,13 +9,15 @@
  background-color: $mainGrey;
 
  @mixin atMedium {
-   padding: 50px 0 50px 0;
+   padding: 20px 0 50px 0;
  }
 
 
   &__image {
     display: block;
     padding: 0 10px 0 10px;
+    opacity: 0.4;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
   }
 
   &__text-content {
@@ -30,7 +32,7 @@
     @mixin atMedium {
       padding: 100px  10px 100px 10px;
       position: absolute;
-    /*  top: 30%;*/
+      top: 30%;
     /*  transform: translateY(-50%);*/
       left: 0;
       width: 100%;
