@@ -500,6 +500,8 @@ a {
 .top-box__image {
   display: block;
   padding: 0 10px 0 10px;
+  opacity: 0.2;
+  filter: alpha(opacity=50);/* For IE8 and earlier */
 }
 
 .top-box__text-content {
