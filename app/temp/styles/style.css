@@ -791,7 +791,7 @@ a {
 .site-header__logo {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 10%;
   -webkit-transform: translateX(-50%) scale(.8);
           transform: translateX(-50%) scale(.8);
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -802,6 +802,7 @@ a {
           transform-origin: 50% 0;
   background-color: #2f5572;
   padding: 45px 56px;
+  font-size: 4rem;
 }
 
 @media (min-width: 800px) {
