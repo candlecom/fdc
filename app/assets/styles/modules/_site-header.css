@@ -7,10 +7,10 @@
 
   @mixin atMedium {
     position: fixed;
-    background-color: rgba($mainGrey, .50);
+    background-color: rgba($mainGreen, .50);
 
     &--dark {
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba($mainGreen, .85);
     }
 
 
@@ -30,6 +30,15 @@
     }
   }
 
+  &__logo-graphic {
+    border-radius: 85px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 0 auto;
+    position: relative;
+  }
+
   &__logo {
       position: absolute;
       top: 0;
@@ -38,7 +47,7 @@
       transition: transform .3s ease-out;
       transform-origin: 50% 0;
       background-color: $mainBlue;
-      padding: 45px 56px;
+      padding: 10px 10px;
 
       @mixin atMedium {
         left: auto;

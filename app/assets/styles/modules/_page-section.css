@@ -3,7 +3,7 @@
 
 
   &--blue {
-    background-color: $mainBlueLight;
+    background-color: rgba($mainBlue, .85);
     color: #FFFFFF;
   }
 }
