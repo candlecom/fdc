@@ -493,7 +493,7 @@ a {
 @media (min-width: 800px) {
 
   .top-box {
-    padding: 20px 0 50px 0;
+    padding: 20px 0 0 0;
   }
 }
 
@@ -1119,4 +1119,10 @@ a {
 
 .modal__close:hover {
   color: #d59541;
+}
+
+.section-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-align: center;
 }

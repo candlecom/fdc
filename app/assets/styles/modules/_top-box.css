@@ -7,9 +7,10 @@
  width: 100%;
  /*padding-top: 0px;*/
  background-color: $mainGrey;
+ 
 
  @mixin atMedium {
-   padding: 20px 0 50px 0;
+   padding: 20px 0 0 0;
  }
 
 
