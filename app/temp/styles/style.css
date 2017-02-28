@@ -1125,11 +1125,15 @@ a {
   font-size: 3.75rem;
   font-weight: 300;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 0;
 }
 
 .section-title strong {
   font-weight: 500;
+=======
+  margin: 0;
+>>>>>>> 2c32bf5604af435210eb8752bd35e91c1e504a3f
 }
 
 .services {
