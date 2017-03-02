@@ -9,8 +9,11 @@
  background-color: $mainGrey;
 
 
+
  @mixin atMedium {
-   padding: 0;
+  padding: 0;
+
+  @mixin clearfix;
  }
 
 
@@ -31,7 +34,7 @@
 
   &__text-content {
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(10%);
     left: 0;
     width: 100%;
@@ -39,28 +42,33 @@
 
 
     @mixin atMedium {
-      padding: 100px  10px 100px 10px;
+      padding: 100px  10px 10px 10px;
       position: absolute;
-      top: 30%;
+      top: 0%;
+      transform: translateY(5%);
     /*  transform: translateY(-50%);*/
       left: 0;
       width: 100%;
       text-align: center;
 
     }
+
+    .chrome {
+        transform: translateY(50%);
+    }
+
+
   }
 
   &__title {
     font-weight: 300;
-    color: $mainBlue;
     font-size: 1.1rem;
     margin: 0;
 
-    @mixin atSmall {
+    @mixin atMedium {
+    color: $mainBlue;
     font-size: 4.8rem;
     font-weight: 300;
-    color: $mainBlue;
-    font-size: 1.1rem;
     margin: 0;
 
     }
