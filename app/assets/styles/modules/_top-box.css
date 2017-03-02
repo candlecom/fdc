@@ -8,22 +8,31 @@
  /*padding-top: 0px;*/
  background-color: $mainGrey;
 
+
  @mixin atMedium {
-   padding: 20px 0 50px 0;
+   padding: 0;
  }
 
 
   &__image {
+    display: block;
+    padding: 10 10px 0 10px;
+    opacity: 0.4;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+
+  &__image-small {
     display: block;
     padding: 0 10px 0 10px;
     opacity: 0.4;
     filter: alpha(opacity=50); /* For IE8 and earlier */
   }
 
+
   &__text-content {
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translateY(-30%);
+    transform: translateY(10%);
     left: 0;
     width: 100%;
     text-align: center;
