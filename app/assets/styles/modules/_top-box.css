@@ -16,6 +16,15 @@
   @mixin clearfix;
  }
 
+ &__btn {
+
+   @mixin atMedium {
+     display: none;
+   }
+
+
+ }
+
 
   &__image {
     display: block;
@@ -111,14 +120,15 @@
   }
 
   &__description {
-    max-width: 100px;
+    max-width: 300px;
     font-weight: 200;
     color: #FFF;
-    font-size: .8rem;
+    font-size: 1.8rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
     margin-left: auto;
     margin-right: auto;
     line-height: 1rem;
+    padding-bottom: 10px;
 
   }
 

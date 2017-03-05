@@ -503,6 +503,13 @@ a {
   }
 }
 
+@media (min-width: 800px) {
+
+  .top-box__btn {
+    display: none;
+  }
+}
+
 .top-box__image {
   display: block;
   padding: 10 10px 0 10px;
@@ -613,14 +620,15 @@ a {
 }
 
 .top-box__description {
-  max-width: 100px;
+  max-width: 300px;
   font-weight: 200;
   color: #FFF;
-  font-size: .8rem;
+  font-size: 1.8rem;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
   margin-left: auto;
   margin-right: auto;
   line-height: 1rem;
+  padding-bottom: 10px;
 }
 
 .btn {
@@ -1201,6 +1209,12 @@ a {
 .services__graphic {
   position: absolute;
   left: 0;
+}
+
+.services__img {
+  border-radius: 15px;
+  width: 50px;
+  margin: 10px 10px 0 0;
 }
 
 /*@mixin atSmall {
