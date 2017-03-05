@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11257,7 +11257,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(7);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11338,34 +11338,6 @@ exports.default = StickyHeader;
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-CSS Browser Selector v0.4.0 (Nov 02, 2010)
-Rafael Lima (http://rafael.adm.br)
-http://rafael.adm.br/css_browser_selector
-License: http://creativecommons.org/licenses/by/2.5/
-Contributors: http://rafael.adm.br/css_browser_selector#contributors
-*/
-function css_browser_selector(u) {
-  var ua = u.toLowerCase(),
-      is = function is(t) {
-    return ua.indexOf(t) > -1;
-  },
-      g = 'gecko',
-      w = 'webkit',
-      s = 'safari',
-      o = 'opera',
-      m = 'mobile',
-      h = document.documentElement,
-      b = [!/opera|webtv/i.test(ua) && /msie\s(\d)/.test(ua) ? 'ie ie' + RegExp.$1 : is('firefox/2') ? g + ' ff2' : is('firefox/3.5') ? g + ' ff3 ff3_5' : is('firefox/3.6') ? g + ' ff3 ff3_6' : is('firefox/3') ? g + ' ff3' : is('gecko/') ? g : is('opera') ? o + (/version\/(\d+)/.test(ua) ? ' ' + o + RegExp.$1 : /opera(\s|\/)(\d+)/.test(ua) ? ' ' + o + RegExp.$2 : '') : is('konqueror') ? 'konqueror' : is('blackberry') ? m + ' blackberry' : is('android') ? m + ' android' : is('chrome') ? w + ' chrome' : is('iron') ? w + ' iron' : is('applewebkit/') ? w + ' ' + s + (/version\/(\d+)/.test(ua) ? ' ' + s + RegExp.$1 : '') : is('mozilla/') ? g : '', is('j2me') ? m + ' j2me' : is('iphone') ? m + ' iphone' : is('ipod') ? m + ' ipod' : is('ipad') ? m + ' ipad' : is('mac') ? 'mac' : is('darwin') ? 'mac' : is('webtv') ? 'webtv' : is('win') ? 'win' + (is('windows nt 6.0') ? ' vista' : '') : is('freebsd') ? 'freebsd' : is('x11') || is('linux') ? 'linux' : '', 'js'];c = b.join(' ');h.className += ' ' + c;return c;
-};css_browser_selector(navigator.userAgent);
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11713,7 +11685,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11738,10 +11710,6 @@ var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 var _Modal = __webpack_require__(3);
 
 var _Modal2 = _interopRequireDefault(_Modal);
-
-var _css_browser_selector = __webpack_require__(6);
-
-var _css_browser_selector2 = _interopRequireDefault(_css_browser_selector);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

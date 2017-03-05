@@ -110,6 +110,14 @@
         transition: transform .3s ease-out;
       }
 
+        @mixin atMobile {
+          top: 60px;
+        }
+
+        @mixin atSmall {
+          top: 60px;
+        }
+
       @mixin atMedium {
       display: none;
       }

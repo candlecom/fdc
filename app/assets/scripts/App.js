@@ -3,7 +3,6 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
-import css_browser_selector from './modules/css_browser_selector';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".feature-item"), "85%");

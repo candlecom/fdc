@@ -56,8 +56,6 @@
     .chrome {
         transform: translateY(50%);
     }
-
-
   }
 
   &__title {
@@ -66,18 +64,7 @@
   /*  font-size: 1.1rem;*/
   /*margin: 0;*/
 
-  @mixin atLarge {
-  display: block;
-  color: $mainBlue;
-  font-size: 4.8rem;
-  font-weight: 300;
-  margin: 0;
-
-  }
-}
-
-
-    @mixin atMedium {
+    @mixin atLarge {
     display: block;
     color: $mainBlue;
     font-size: 4.8rem;
@@ -85,26 +72,37 @@
     margin: 0;
 
     }
+
+    @mixin atMedium {
+    display: block;
+    color: $mainBlue;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin: 0;
+
+    }
   }
 
-  &__subtitle {
-    max-width: 200px;
+    &__subtitle {
+    max-width: 90%;
     font-weight: 100;
     color: #FFF;
-    font-size: .8rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
     margin-left: auto;
     margin-right: auto;
-    line-height: 1rem;
+    line-height: 2.1rem;
 
     @mixin atSmall {
     font-size: 1.9rem;
     }
+
     @mixin atMedium {
-    font-size: 1.9rem;
-    max-width: 30rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    max-width: 20rem;
+    line-height: 2rem;
     }
+
     @mixin atLarge {
     font-size: 1.9rem;
     max-width: 30rem;
