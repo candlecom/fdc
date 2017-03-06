@@ -525,19 +525,20 @@ a {
 }
 
 .top-box__text-content {
-  position: relative;
-  top: 40%;
+  position: absolute;
+  top: 4%;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
   left: 0;
   width: 100%;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media (min-width: 800px) {
 
   .top-box__text-content {
-    padding: 100px  10px 10px 10px;
+    padding: 80px  10px 10px 10px;
     position: absolute;
     top: 0%;
     -webkit-transform: translateY(5%);
@@ -559,7 +560,7 @@ a {
 
 /*margin: 0;*/
 
-@media (min-width: 1920px) {
+@media (min-width: 1220px) {
 
   .top-box__title {
     display: block;
@@ -584,14 +585,14 @@ a {
 }
 
 .top-box__subtitle {
-  max-width: 90%;
+  max-width: 100%;
   font-weight: 100;
   color: #FFF;
   font-size: 1.5rem;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
   margin-left: auto;
   margin-right: auto;
-  line-height: 2.1rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 530px) {
@@ -610,7 +611,7 @@ a {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1220px) {
 
   .top-box__subtitle {
     font-size: 1.9rem;
@@ -985,6 +986,13 @@ a {
   z-index: -10;
   padding-top: 90px;
   text-align: center;
+}
+
+@media (min-width: 1220px) {
+
+  .site-header__menu-content {
+    padding-top: 120px;
+  }
 }
 
 @media (min-width: 800px) {

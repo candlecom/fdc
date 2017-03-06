@@ -42,16 +42,17 @@
 
 
   &__text-content {
-    position: relative;
-    top: 40%;
+    position: absolute;
+    top: 4%;
     transform: translateY(10%);
     left: 0;
     width: 100%;
     text-align: center;
+    font-size: 1rem;
 
 
     @mixin atMedium {
-      padding: 100px  10px 10px 10px;
+      padding: 80px  10px 10px 10px;
       position: absolute;
       top: 0%;
       transform: translateY(5%);
@@ -93,14 +94,14 @@
   }
 
     &__subtitle {
-    max-width: 90%;
+    max-width: 100%;
     font-weight: 100;
     color: #FFF;
     font-size: 1.5rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
     margin-left: auto;
     margin-right: auto;
-    line-height: 2.1rem;
+    line-height: 1.75rem;
 
     @mixin atSmall {
     font-size: 1.9rem;
