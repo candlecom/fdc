@@ -12,6 +12,12 @@
 
  @mixin atMedium {
   padding: 0;
+  border-bottom: 10px solid $mainGreen;
+  position: relative;
+  width: 100%;
+  /*padding-top: 0px;*/
+  background-color: $mainGrey;
+
 
   @mixin clearfix;
  }
@@ -52,7 +58,7 @@
 
 
     @mixin atMedium {
-      padding: 80px  10px 10px 10px;
+      padding: 60px  10px 10px 10px;
       position: absolute;
       top: 0%;
       transform: translateY(5%);
@@ -60,6 +66,20 @@
       left: 0;
       width: 100%;
       text-align: center;
+
+    }
+
+    @mixin atLarge {
+      padding: 100px  10px 10px 10px;
+      position: absolute;
+      top: 0%;
+      transform: translateY(25%);
+    /*  transform: translateY(-50%);*/
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+
 
     }
 
@@ -74,34 +94,36 @@
   /*  font-size: 1.1rem;*/
   /*margin: 0;*/
 
-    @mixin atLarge {
-    display: block;
-    color: $mainBlue;
-    font-size: 4.8rem;
-    font-weight: 300;
-    margin: 0;
-
-    }
-
     @mixin atMedium {
     display: block;
     color: $mainBlue;
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    }
+
+    @mixin atLarge {
+    display: block;
+    color: $mainBlue;
+    font-size: 4rem;
+    font-weight: 700;
     margin: 0;
 
     }
+
   }
 
     &__subtitle {
     max-width: 100%;
-    font-weight: 100;
-    color: #FFF;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+    font-weight: 700;
+    color: $mainGreen;
+    font-size: 1.25rem;
+  /*  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);*/
     margin-left: auto;
     margin-right: auto;
     line-height: 1.75rem;
+    padding-top: 11px;
+    width: 90%;
 
     @mixin atSmall {
     font-size: 1.9rem;
@@ -109,27 +131,42 @@
 
     @mixin atMedium {
     font-size: 1.2rem;
-    max-width: 20rem;
+    /*max-width: 30rem;*/
     line-height: 2rem;
+    width: 100%;
     }
 
     @mixin atLarge {
     font-size: 1.9rem;
-    max-width: 30rem;
+  /*  max-width: 30rem; */
     line-height: 2.5rem;
+    width: 60%;
     }
   }
 
   &__description {
     max-width: 300px;
     font-weight: 200;
-    color: #FFF;
+    color: $mainBlue;
     font-size: 1.8rem;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
     margin-left: auto;
     margin-right: auto;
     line-height: 1rem;
     padding-bottom: 10px;
+
+    @mixin atMedium {
+      max-width: 300px;
+      font-weight: 200;
+      color: $mainBlue;
+      font-size: 1.8rem;
+      text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1rem;
+      padding-bottom: 40px;
+
+    }
 
   }
 

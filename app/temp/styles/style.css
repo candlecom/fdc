@@ -490,10 +490,14 @@ a {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .top-box {
     padding: 0;
+    border-bottom: 10px solid #087830;
+    position: relative;
+    width: 100%;/*padding-top: 0px;*/
+    background-color: #babdc1;
   }
 
   .top-box::after {
@@ -503,7 +507,7 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .top-box__btn {
     display: none;
@@ -535,14 +539,28 @@ a {
   font-size: 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .top-box__text-content {
-    padding: 80px  10px 10px 10px;
+    padding: 60px  10px 10px 10px;
     position: absolute;
     top: 0%;
     -webkit-transform: translateY(5%);
             transform: translateY(5%);/*  transform: translateY(-50%);*/
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .top-box__text-content {
+    padding: 100px  10px 10px 10px;
+    position: absolute;
+    top: 0%;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);/*  transform: translateY(-50%);*/
     left: 0;
     width: 100%;
     text-align: center;
@@ -560,39 +578,40 @@ a {
 
 /*margin: 0;*/
 
-@media (min-width: 1220px) {
+@media (min-width: 700px) {
 
   .top-box__title {
     display: block;
-    color: #2f5572;
-    font-size: 4.8rem;
-    font-weight: 300;
+    color: #3D417E;
+    font-size: 3rem;
+    font-weight: 700;
     margin: 0;
   }
 }
 
 /*  font-size: 1.1rem;*/
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 
   .top-box__title {
     display: block;
-    color: #2f5572;
-    font-size: 2.8rem;
-    font-weight: 300;
+    color: #3D417E;
+    font-size: 4rem;
+    font-weight: 700;
     margin: 0;
   }
 }
 
 .top-box__subtitle {
   max-width: 100%;
-  font-weight: 100;
-  color: #FFF;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+  font-weight: 700;
+  color: #087830;
+  font-size: 1.25rem;/*  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);*/
   margin-left: auto;
   margin-right: auto;
   line-height: 1.75rem;
+  padding-top: 11px;
+  width: 90%;
 }
 
 @media (min-width: 530px) {
@@ -602,34 +621,49 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .top-box__subtitle {
-    font-size: 1.2rem;
-    max-width: 20rem;
+    font-size: 1.2rem;/*max-width: 30rem;*/
     line-height: 2rem;
+    width: 100%;
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1000px) {
 
   .top-box__subtitle {
-    font-size: 1.9rem;
-    max-width: 30rem;
+    font-size: 1.9rem;/*  max-width: 30rem; */
     line-height: 2.5rem;
+    width: 60%;
   }
 }
 
 .top-box__description {
   max-width: 300px;
   font-weight: 200;
-  color: #FFF;
+  color: #3D417E;
   font-size: 1.8rem;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+  text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
   margin-left: auto;
   margin-right: auto;
   line-height: 1rem;
   padding-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+
+  .top-box__description {
+    max-width: 300px;
+    font-weight: 200;
+    color: #3D417E;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1rem;
+    padding-bottom: 40px;
+  }
 }
 
 .btn {
@@ -666,13 +700,14 @@ a {
 }
 
 .wrapper__background {
-  background-color: rgba(186,189,193, .5)
+  background-color: rgba(186,189,193, .75);
+  border-radius: 25px;
 }
 
 /* padding: 4.5rem 0; */
 
 .page-section--blue {
-  background-color: rgba(47,85,114, .85);
+  background-color: rgba(61,65,126, .85);
   color: #FFFFFF;
 }
 
@@ -693,7 +728,7 @@ a {
   font-weight: bold;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .headlineH1 {
     font-weight: 300;
@@ -717,7 +752,7 @@ a {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .headlineH3 {
     font-weight: 200;
@@ -747,7 +782,7 @@ a {
   padding-right: 65px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .row__medium-4 {
     float: left;
@@ -776,7 +811,7 @@ a {
 }
 
 .site-footer {
-  background-color: #2f5572;
+  background-color: #3D417E;
   color: #ffffff;
   padding: .5rem 0;
   text-align: center;
@@ -788,7 +823,7 @@ a {
   font-weight: 200;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .site-footer__text {
     display: inline;
@@ -812,7 +847,7 @@ a {
   display: table;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .site-header {
     position: fixed;
@@ -825,7 +860,7 @@ a {
 }
 
 .site-header--is-expanded {
-  background-color: rgba(47,85,114, .55);
+  background-color: rgba(61,65,126, .55);
 }
 
 .site-header__btn-container {
@@ -862,7 +897,7 @@ a {
       background-color: $mainBlue;
       padding: 10px 10px;*/
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .site-header__logo {
     display: inline;
@@ -953,7 +988,7 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .site-header__menu-icon {
     display: none;
@@ -988,14 +1023,14 @@ a {
   text-align: center;
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1000px) {
 
   .site-header__menu-content {
     padding-top: 120px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .site-header__menu-content {
     opacity: 1;
@@ -1017,14 +1052,14 @@ a {
   padding-top: 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .primary-nav {
     padding-top: 0;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .primary-nav--pull-right {
     float: right;
@@ -1046,22 +1081,32 @@ a {
   list-style: none;
   display: inline-block;
   padding-right: 7px;
+  padding-left: 20px;
+  border-radius: 25px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .primary-nav li {
-    padding-right: 20px;
+    padding-right: 30px;
     float: left;
     display: block;
+    background-color: #087830;
+    margin-right: 3px;
   }
 }
+
+.primary-nav li:first-child {
+  padding-right: 20;
+}
+
+@media (min-width: 700px) {}
 
 .primary-nav li:last-child {
   padding-right: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .primary-nav li:last-child {
     padding-right: 20px;
@@ -1075,10 +1120,10 @@ a {
   display: block;
   padding: 5px 8px;
   font-size: .8rem;
-  background-color: rgba(47,85,114, .5);
+  background-color: rgba(61,65,126, .5);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   .primary-nav a {
     font-size: 1rem;
@@ -1192,7 +1237,7 @@ a {
           transform: scaleX(1.2);
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
-  color: #2f5572;
+  color: #3D417E;
   cursor: pointer;
 }
 

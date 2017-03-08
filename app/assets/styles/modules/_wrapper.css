@@ -6,7 +6,8 @@
   margin-right: auto;
 
   &__background {
-    background-color: rgba($mainGrey, .5)
+    background-color: rgba($mainGrey, .75);
+    border-radius: 25px;
   }
 
 }
