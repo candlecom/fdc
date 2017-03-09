@@ -73,18 +73,24 @@
       padding: 100px  10px 10px 10px;
       position: absolute;
       top: 0%;
-      transform: translateY(25%);
+      transform: translateY(10%);
     /*  transform: translateY(-50%);*/
       left: 0;
       width: 100%;
       text-align: center;
 
-
-
     }
 
-    .chrome {
-        transform: translateY(50%);
+    @mixin atLarger {
+      padding: 100px 10px 10px 10px;
+      position: absolute;
+      top: 0%;
+      transform: translateY(0%);
+    /*  transform: translateY(-50%);*/
+      left: 0;
+      width: 100%;
+      text-align: center;
+
     }
   }
 

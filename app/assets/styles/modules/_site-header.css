@@ -28,6 +28,7 @@
     @mixin atSmall {
       display: inline-block;
       float: right;
+
     }
   }
 
