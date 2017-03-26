@@ -4,18 +4,19 @@
 
  border-bottom: 10px solid $mainGreen;
  position: relative;
- width: 100%;
- /*padding-top: 0px;*/
+ /*width: 100%;
+ padding-top: 0px;*/
  background-color: $mainGrey;
 
+ @mixin clearfix;
 
 
  @mixin atMedium {
   padding: 0;
   border-bottom: 10px solid $mainGreen;
   position: relative;
-  width: 100%;
-  /*padding-top: 0px;*/
+  /*width: 100%;
+  padding-top: 0px;*/
   background-color: $mainGrey;
 
 
@@ -113,7 +114,10 @@
     color: $mainBlue;
     font-size: 4rem;
     font-weight: 700;
-    margin: 0;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: $mainGrey;
+    max-width: 75%;
 
     }
 
@@ -124,7 +128,7 @@
     font-weight: 700;
     color: $mainGreen;
     font-size: 1.25rem;
-  /*  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);*/
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
     margin-left: auto;
     margin-right: auto;
     line-height: 1.75rem;
@@ -144,9 +148,10 @@
 
     @mixin atLarge {
     font-size: 1.9rem;
-  /*  max-width: 30rem; */
+    border-radius: 25px;
     line-height: 2.5rem;
-    width: 60%;
+    width: 45%;
+    background-color: $mainGrey;
     }
   }
 
@@ -159,7 +164,7 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1rem;
-    padding-bottom: 10px;
+    padding: 10px;
 
     @mixin atMedium {
       max-width: 300px;
@@ -174,6 +179,32 @@
 
     }
 
-  }
+    @mixin atLarge {
+      max-width: 300px;
+      font-weight: 200;
+      color: $mainBlue;
+      font-size: 1.8rem;
+      text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1rem;
+      padding: 20px;
+      background-color: $mainGrey;
+      border-radius: 25px;
+    }
 
+    @mixin atLarger {
+      max-width: 300px;
+      font-weight: 200;
+      color: $mainBlue;
+      font-size: 1.8rem;
+      text-shadow: 2px 2px 0 rgba(47, 85, 114 .5);
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1rem;
+      padding: 20px;
+      background-color: $mainGrey;
+      border-radius: 25px;
+    }
+  }
 }

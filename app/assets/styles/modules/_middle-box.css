@@ -1,3 +1,7 @@
 .middle-box {
+padding: 0 0 50px 0;
 position: relative;
+display: inline-block;
+
+@mixin clearfix;
 }
