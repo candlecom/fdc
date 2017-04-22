@@ -11,4 +11,8 @@
     border-radius: 25px;
   }
 
+  &__top-box {
+    padding: 0 18px 28px;
+  }
+
 }
