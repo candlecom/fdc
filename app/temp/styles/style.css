@@ -461,9 +461,9 @@ template {
 }
 
 html
-{
+/*{
   overflow: hidden;
-}
+}*/
 
 body {
     width: 100%;
@@ -551,6 +551,7 @@ a {
 
 .top-box__text-content-small {
   display: block;
+  text-align: center;
 }
 
 @media (min-width: 700px) {
@@ -652,7 +653,7 @@ a {
 @media (min-width: 1200px) {
 
   .top-box__text-content {
-    padding: 100px 10px 10px 10px;
+    padding: 90px 10px 10px 10px;
     position: absolute;
     top: 0%;
     -webkit-transform: translateY(0%);
@@ -719,10 +720,10 @@ a {
 @media (min-width: 700px) {
 
   .top-box__subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-radius: 25px;
     line-height: 2.5rem;
-    width: 45%;
+    width: 75%;
     background-color: #babdc1;
   }
 }
@@ -731,6 +732,17 @@ a {
 
   .top-box__subtitle {
     font-size: 1.5rem;
+    border-radius: 25px;
+    line-height: 2.5rem;
+    width: 38%;
+    background-color: #babdc1;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .top-box__subtitle {
+    font-size: 1.7rem;
     border-radius: 25px;
     line-height: 2.5rem;
     width: 38%;
@@ -799,6 +811,14 @@ a {
   }
 }
 
+@media (min-width: 700px) {
+
+  .top-box__description h3 {
+    margin: 3em 0 0 0;
+    padding: 0;
+  }
+}
+
 .middle-box {
 padding: 0 0 50px 0;
 position: relative;
@@ -810,6 +830,10 @@ display: inline-block;
   clear: both;
   display: table;
 }
+
+.middle-box h2 {
+   padding-left: 4rem;
+ }
 
 .btn {
   background-color: #087830;
@@ -825,9 +849,17 @@ display: inline-block;
 }
 
 .btn__top-box {
-  margin: 0 4rem;
+  margin: 0 4rem 0 6rem;
   display: block;
   float: left;
+}
+
+@media (min-width: 530px) {
+
+  .btn {
+    display: block;
+    float: left;
+  }
 }
 
 .btn--large {
@@ -838,6 +870,7 @@ display: inline-block;
 @media (min-width: 530px) {
 
   .btn--large {
+    margin: 0 4rem 0 7rem;
     font-size: 4.25;
   }
 }
@@ -1426,6 +1459,10 @@ display: inline-block;
   }
 }
 
+.services .services h2 {
+  text-align: center;
+}
+
 .services__graphic {
   position: absolute;
   left: 0;
@@ -1459,13 +1496,23 @@ display: inline-block;
 }*/
 
 .section-title h2 {
-  font-size: 3.75rem;
+  font-size: 1rem;
   font-weight: 200;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+
+  /*strong {
+    font-weight: 700;
+  }*/
 
 }
 
-.section-title h2 strong {
-  font-weight: 700;
+@media (min-width: 376px) {
+
+  .section-title h2 {
+    font-size: 3.75rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 auto;
+  }
 }

@@ -6,6 +6,10 @@
     padding-left: 94px;
   }
 
+.services h2 {
+  text-align: center;
+}
+
   &__graphic {
     position: absolute;
     left: 0;

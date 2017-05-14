@@ -32,7 +32,7 @@
 
  &__btn {
 
-   @mixin atMedium {
+  @mixin atMedium {
      display: none;
    }
 
@@ -56,6 +56,7 @@
 
   &__text-content-small {
     display: block;
+    text-align: center;
 
 
     @mixin atMedium {
@@ -142,7 +143,7 @@
     }
 
     @mixin atLarger {
-      padding: 100px 10px 10px 10px;
+      padding: 90px 10px 10px 10px;
       position: absolute;
       top: 0%;
       transform: translateY(0%);
@@ -199,15 +200,23 @@
     }
 
     @mixin atMedium {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       border-radius: 25px;
       line-height: 2.5rem;
-      width: 45%;
+      width: 75%;
       background-color: $mainGrey;
     }
 
     @mixin atLarge {
     font-size: 1.5rem;
+    border-radius: 25px;
+    line-height: 2.5rem;
+    width: 38%;
+    background-color: $mainGrey;
+    }
+
+    @mixin atLarger {
+    font-size: 1.7rem;
     border-radius: 25px;
     line-height: 2.5rem;
     width: 38%;
@@ -267,4 +276,11 @@
       border-radius: 25px;
     }
   }
+
+    &__description h3 {
+      @mixin atMedium {
+        margin: 3em 0 0 0;
+        padding: 0;
+      }
+    }
 }
