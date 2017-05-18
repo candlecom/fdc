@@ -164,7 +164,7 @@
     @mixin atMedium {
     display: block;
     color: $mainBlue;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 10px 0 0 0;
     }
@@ -187,12 +187,12 @@
     max-width: 100%;
     font-weight: 500;
     color: $mainGreen;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
     margin-left: auto;
     margin-right: auto;
     line-height: 1.75rem;
-    padding-top: 0rem;
+    padding-top: 1rem;
     width: 90%;
 
     @mixin atSmall {
@@ -200,26 +200,28 @@
     }
 
     @mixin atMedium {
-      font-size: 1.5rem;
+      font-size: 1.15rem;
       border-radius: 25px;
-      line-height: 2.5rem;
+      line-height: 1.5rem;
       width: 75%;
       background-color: $mainGrey;
+      padding: 0;
+      margin: 10px auto;
     }
 
     @mixin atLarge {
     font-size: 1.5rem;
     border-radius: 25px;
-    line-height: 2.5rem;
-    width: 38%;
+    line-height: 1.5rem;
+    width: 60%;
     background-color: $mainGrey;
     }
 
     @mixin atLarger {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     border-radius: 25px;
     line-height: 2.5rem;
-    width: 38%;
+    width: 70%;
     background-color: $mainGrey;
     }
   }

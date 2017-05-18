@@ -675,7 +675,7 @@ a {
   .top-box__title {
     display: block;
     color: #3D417E;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 10px 0 0 0;
   }
@@ -701,12 +701,12 @@ a {
   max-width: 100%;
   font-weight: 500;
   color: #087830;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
   margin-left: auto;
   margin-right: auto;
   line-height: 1.75rem;
-  padding-top: 0rem;
+  padding-top: 1rem;
   width: 90%;
 }
 
@@ -720,11 +720,13 @@ a {
 @media (min-width: 700px) {
 
   .top-box__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     border-radius: 25px;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     width: 75%;
     background-color: #babdc1;
+    padding: 0;
+    margin: 10px auto;
   }
 }
 
@@ -733,8 +735,8 @@ a {
   .top-box__subtitle {
     font-size: 1.5rem;
     border-radius: 25px;
-    line-height: 2.5rem;
-    width: 38%;
+    line-height: 1.5rem;
+    width: 60%;
     background-color: #babdc1;
   }
 }
@@ -742,10 +744,10 @@ a {
 @media (min-width: 1200px) {
 
   .top-box__subtitle {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     border-radius: 25px;
     line-height: 2.5rem;
-    width: 38%;
+    width: 70%;
     background-color: #babdc1;
   }
 }
@@ -832,7 +834,7 @@ display: inline-block;
 }
 
 .middle-box h2 {
-   padding-left: 4rem;
+   padding-left: 2rem;
  }
 
 .btn {
@@ -1038,8 +1040,7 @@ display: inline-block;
 @media (min-width: 700px) {
 
   .site-header {
-    position: fixed;
-    background-color: rgba(8,120,48, .50);
+    position: fixed;/*background-color: rgba($mainGreen, .50); */
   }
 
   .site-header--dark {
@@ -1496,7 +1497,7 @@ display: inline-block;
 }*/
 
 .section-title h2 {
-  font-size: 1rem;
+  font-size: 3.75rem;
   font-weight: 200;
   text-align: center;
   margin: 0 auto;
