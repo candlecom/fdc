@@ -551,7 +551,7 @@ a {
 
 .top-box__text-content-small {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 700px) {
@@ -578,10 +578,17 @@ a {
 .top-box__text-content-small ul {
   display: block;
   margin: .5rem;
-  list-style: none;
+  list-style: square;
   padding: 1rem 1rem;
   color: #087830;
   line-height: 1.2rem;
+}
+
+@media (min-width: 376px) {
+
+  .top-box__text-content-small ul {
+    padding: 0 0 0 5rem;
+  }
 }
 
 .top-box__text-content-small_description {
@@ -691,8 +698,7 @@ a {
     font-size: 4rem;
     font-weight: 700;
     border-radius: 25px;
-    margin: 0 auto;
-    background-color: #babdc1;
+    margin: 0 auto;/*  background-color: $mainGrey;*/
     max-width: 100%;
   }
 }
@@ -822,9 +828,9 @@ a {
 }
 
 .middle-box {
-padding: 0 0 50px 0;
-position: relative;
-display: inline-block;
+  padding: 0 1.2rem 2.5rem;
+  border-bottom: 10px solid #087830;
+  position: relative;
 }
 
 .middle-box::after {
@@ -833,9 +839,12 @@ display: inline-block;
   display: table;
 }
 
-.middle-box h2 {
-   padding-left: 2rem;
- }
+/*.middle-box h2 {
+  font-size: 3.75rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 auto;
+ }*/
 
 .btn {
   background-color: #087830;
@@ -896,10 +905,7 @@ display: inline-block;
   padding: 0 18px 28px;
 }
 
-.page-section--blue {
-  background-color: rgba(61,65,126, .85);
-  color: #FFFFFF;
-}
+/*@import "modules/_page-section";*/
 
 .headlineH1 {
   font-weight: 300;
@@ -1448,10 +1454,9 @@ display: inline-block;
 
 .services {
   position: relative;
+ padding-bottom: 2.5rem;
 
 }
-
-/*  padding-bottom: 2.5rem;*/
 
 @media (min-width: 530px) {
 
@@ -1472,7 +1477,7 @@ display: inline-block;
 .services__img {
   border-radius: 15px;
   width: 50px;
-  margin: 10px 10px 0 0;
+  margin: 10px 10px -15px 0;
 }
 
 /*@mixin atSmall {
@@ -1496,24 +1501,22 @@ display: inline-block;
   }
 }*/
 
-.section-title h2 {
+.section-title {
   font-size: 3.75rem;
   font-weight: 200;
   text-align: center;
   margin: 0 auto;
 
-  /*strong {
-    font-weight: 700;
-  }*/
-
 }
 
-@media (min-width: 376px) {
-
-  .section-title h2 {
+/*  @mixin atMobile {
     font-size: 3.75rem;
     font-weight: 200;
     text-align: center;
     margin: 0 auto;
-  }
+
+  }*/
+
+.section-title strong {
+  font-weight: bold;
 }

@@ -1,10 +1,13 @@
 .middle-box {
-padding: 0 0 50px 0;
-position: relative;
-display: inline-block;
+  padding: 0 1.2rem 2.5rem;
+  border-bottom: 10px solid $mainGreen;
+  position: relative;
 
 @mixin clearfix;
 }
- .middle-box h2 {
-   padding-left: 2rem;
- }
+/*.middle-box h2 {
+  font-size: 3.75rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 auto;
+ }*/

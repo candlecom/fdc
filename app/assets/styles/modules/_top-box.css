@@ -56,7 +56,7 @@
 
   &__text-content-small {
     display: block;
-    text-align: center;
+    text-align: left;
 
 
     @mixin atMedium {
@@ -74,10 +74,14 @@
   &__text-content-small ul {
     display: block;
     margin: .5rem;
-    list-style: none;
+    list-style: square;
     padding: 1rem 1rem;
     color: $mainGreen;
     line-height: 1.2rem;
+
+    @mixin atMobile {
+      padding: 0 0 0 5rem;
+    }
   }
 
   &__text-content-small_description {
@@ -176,7 +180,7 @@
     font-weight: 700;
     border-radius: 25px;
     margin: 0 auto;
-    background-color: $mainGrey;
+  /*  background-color: $mainGrey;*/
     max-width: 100%;
 
     }

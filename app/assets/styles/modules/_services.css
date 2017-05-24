@@ -1,6 +1,6 @@
 .services {
   position: relative;
-/*  padding-bottom: 2.5rem;*/
+ padding-bottom: 2.5rem;
 
   @mixin atSmall {
     padding-left: 94px;
@@ -19,7 +19,7 @@
   &__img {
     border-radius: 15px;
     width: 50px;
-    margin: 10px 10px 0 0;
+    margin: 10px 10px -15px 0;
   }
 
 }

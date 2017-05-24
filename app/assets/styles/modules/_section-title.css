@@ -1,19 +1,19 @@
-.section-title h2 {
+.section-title {
   font-size: 3.75rem;
   font-weight: 200;
   text-align: center;
   margin: 0 auto;
 
-  @mixin atMobile {
+/*  @mixin atMobile {
     font-size: 3.75rem;
     font-weight: 200;
     text-align: center;
     margin: 0 auto;
 
-  }
-
-  /*strong {
-    font-weight: 700;
   }*/
+
+  strong {
+    font-weight: bold;
+  }
 
 }
